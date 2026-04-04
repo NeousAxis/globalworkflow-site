@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossary - Global Workflow</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary-color: #00ffff; --secondary-color: #ff00ff; --accent-color: #ffff00; --bg-dark: #0a0a0a; --bg-card: #1a1a1a; --text-light: #ffffff; --text-gray: #cccccc; --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; background-color: var(--bg-dark); color: var(--text-light); line-height: 1.6; }
+        .container { max-width: 800px; margin: 0 auto; padding: 60px 20px; }
+        h1, h2, h3 { font-family: 'Montserrat', sans-serif; color: var(--primary-color); margin-bottom: 20px; margin-top: 40px; }
+        h1 { text-align: center; font-size: 2.5rem; background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 40px; }
+        h2 { font-size: 1.5rem; color: var(--secondary-color); }
+        p { color: var(--text-gray); margin-bottom: 25px; }
+        ul { color: var(--text-gray); margin-left: 20px; margin-bottom: 20px; }
+        li { margin-bottom: 10px; }
+        strong { color: var(--text-light); }
+        a.back-btn { display: inline-block; margin-top: 50px; color: var(--bg-dark); background: var(--gradient); padding: 12px 25px; text-decoration: none; border-radius: 25px; font-weight: 600; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        a.back-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0, 255, 255, 0.3); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Glossary of Terms</h1>
+        
+        <h2>API (Application Programming Interface)</h2>
+        <p>A set of standard rules that allows different software applications to smoothly communicate. Often used to connect your mobile app to external databases or payment services.</p>
+
+        <h2>B2B & B2C</h2>
+        <p><strong>B2B (Business-to-Business):</strong> Services, platforms, or software specifically built for other businesses to use internal.<br>
+        <strong>B2C (Business-to-Consumer):</strong> Consumer applications targeted directly at individual end-users.</p>
+
+        <h2>CI/CD (Continuous Integration / Continuous Deployment)</h2>
+        <p>A modern development practice where new code changes are automatically tested, built, and prepared for a release to production servers or app stores.</p>
+
+        <h2>MVP (Minimum Viable Product)</h2>
+        <p>The very first structural version of an application containing just enough foundational features to be usable by early customers, who can then provide fundamental feedback for future product development.</p>
+
+        <h2>PWA (Progressive Web App)</h2>
+        <p>A responsive web application that uses modern web capabilities to deliver a fast, app-like experience directly to users on any device via a simple browser link.</p>
+
+        <h2>UI/UX (User Interface / User Experience)</h2>
+        <p><strong>UI:</strong> The distinct visual graphical elements (buttons, typography, colors) designed for an app.<br>
+        <strong>UX:</strong> The overall structural experience, psychology, and frictionless flow a user goes through while interacting intimately with the app interface.</p>
+
+        <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </div>
+</body>
+</html>

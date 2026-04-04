@@ -61,6 +61,11 @@ const translations = {
         form_topic_quote: "Request a Quote",
         form_topic_other: "Other",
         form_btn: "Send",
+        footer_privacy: "Privacy Policy (GDPR)",
+        footer_legal: "Legal Notice",
+        footer_agile: "Agile Process",
+        footer_faq: "FAQ",
+        footer_glossary: "Glossary",
         footer_copy: "&copy; 2026 Global Workflow. All rights reserved.",
         footer_location: "Based in Geneva (Switzerland)"
     },
@@ -126,6 +131,11 @@ const translations = {
         form_topic_quote: "Demande de Devis",
         form_topic_other: "Autre",
         form_btn: "Envoyer",
+        footer_privacy: "Politique de confidentialité (RGPD)",
+        footer_legal: "Mentions légales",
+        footer_agile: "Processus Agile",
+        footer_faq: "FAQ",
+        footer_glossary: "Glossaire",
         footer_copy: "&copy; 2026 Global Workflow. Tous droits réservés.",
         footer_location: "Basé à Genève (Suisse)"
     }

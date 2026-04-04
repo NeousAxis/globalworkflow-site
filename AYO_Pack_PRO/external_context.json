@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "layer": "external_context",
+    "version": "2.0",
+    "status": "active",
+    "generated_at": "2026-03-23",
+    "source": "ayo-structured-analysis",
+    "entity": "Global Workflow",
+    "canonical_url": "https://globalworkflow.xyz"
+  },
+  "ecosystem_presence": {
+    "business_type": "Mobile application development (B2B and B2C)",
+    "platform_types": [
+      "web",
+      "en ligne"
+    ],
+    "geographic_context": {
+      "primary_market": "Geneva, Switzerland",
+      "served_areas": "Monde",
+      "delivery_note": "Service disponible en ligne — portée potentiellement internationale"
+    },
+    "declared_by_client": true
+  },
+  "reputation_signals": {
+    "enabled": true,
+    "trust_level": "self_declared_structured",
+    "trust_indicators": {
+      "certifications": [],
+      "quality_assurance": [],
+      "key_metrics": [
+        "Satisfaction des clients"
+      ],
+      "compliance_frameworks": []
+    },
+    "sources": [
+      "performance_indicators"
+    ],
+    "policy": "declared_metrics_only"
+  },
+  "content_signals": {
+    "has_faq": true,
+    "has_glossary": true,
+    "has_documentation": true,
+    "educational_content": "available",
+    "process_transparency": "documented"
+  },
+  "keywords_context": {
+    "discovery_keywords": [
+      "mobile application",
+      "Agentic AI",
+      "AI",
+      "Innovation",
+      "Digital QR Card",
+      "Wise Weather",
+      "Nu Frequencies",
+      "Geneva",
+      "Mobile application development (B2B and B2C)"
+    ],
+    "intent_keywords": [
+      "Trouver une entreprise qui crée des applications web et native",
+      "Comment créer un agent IA",
+      "service agentic AI",
+      "Enhance social life experience with AI-powered mobile applications",
+      "Manage digital business cards",
+      "Get real-time weather updates",
+      "Enhance focus/relaxation/sleep",
+      "Track moon phases"
+    ],
+    "audience_segments": [
+      "Entreprises B2B",
+      "utilisateurs privés B2C"
+    ],
+    "source": "declared_plus_structured_normalization"
+  },
+  "access_channels": {
+    "primary": [
+      "Site web",
+      "En ligne"
+    ],
+    "secondary": [
+      "Email"
+    ],
+    "delivery_modes": [
+      "Online"
+    ]
+  },
+  "usage_permissions": {
+    "allow_listing": true,
+    "allow_comparison": true,
+    "allow_best_of": true,
+    "allow_intent_matching": true,
+    "allow_geographic_targeting": true,
+    "data_freshness": "quarterly_review"
+  },
+  "sunset_policy": {
+    "removable": true,
+    "retention": "3_years_aya_registration",
+    "review_cycle": "annual"
+  }
+}

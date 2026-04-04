@@ -410,6 +410,26 @@
             color: var(--text-gray);
         }
 
+        .footer-links {
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-color);
+            text-shadow: 0 0 5px rgba(255, 255, 0, 0.5);
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .hero h1 {
@@ -686,6 +706,13 @@
 
     <footer>
         <div class="container">
+            <div class="footer-links">
+                <a href="privacy.html" data-i18n="footer_privacy">Privacy Policy (GDPR)</a>
+                <a href="legal.html" data-i18n="footer_legal">Legal Notice</a>
+                <a href="agile.html" data-i18n="footer_agile">Agile Process</a>
+                <a href="faq.html" data-i18n="footer_faq">FAQ</a>
+                <a href="glossary.html" data-i18n="footer_glossary">Glossary</a>
+            </div>
             <p data-i18n="footer_copy">&copy; 2026 Global Workflow. All rights reserved.</p>
             <p data-i18n="footer_location" style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-gray);">Based
                 in Geneva (Switzerland)</p>
