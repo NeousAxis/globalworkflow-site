@@ -699,6 +699,7 @@
                         <textarea placeholder="Message" rows="5" required data-i18n="form_message"></textarea>
                     </div>
                     <button type="submit" class="submit-btn" data-i18n="form_btn">Send</button>
+                    <p id="form-status" style="margin-top: 1rem; text-align: center; min-height: 1.2em;"></p>
                 </form>
             </div>
         </section>
@@ -761,15 +762,39 @@
             observer.observe(el);
         });
 
-        // Gestion du formulaire de contact
+        // Gestion du formulaire de contact (ouverture de la messagerie via mailto)
         document.querySelector('.contact-form').addEventListener('submit', function (e) {
             e.preventDefault();
 
-            // Ici vous pouvez ajouter la logique pour envoyer le formulaire
-            // Par exemple, intégration avec l'API Zeus
+            const form = this;
+            const lang = localStorage.getItem('preferredLanguage') || document.documentElement.lang || 'en';
+            const t = (typeof translations !== 'undefined' && translations[lang]) ? translations[lang] : {};
 
-            alert('Thank you for your message! We will contact you soon.');
-            this.reset();
+            const name = form.querySelector('input[type="text"]').value.trim();
+            const email = form.querySelector('input[type="email"]').value.trim();
+            const select = form.querySelector('select');
+            const topic = select.options[select.selectedIndex].text;
+            const message = form.querySelector('textarea').value.trim();
+
+            const subject = '[Global Workflow] ' + topic;
+            const body = [
+                (t.form_name || 'Name') + ': ' + name,
+                (t.form_email || 'Email') + ': ' + email,
+                (t.form_topic_label || 'Topic') + ': ' + topic,
+                '',
+                (t.form_message || 'Message') + ':',
+                message
+            ].join('\n');
+
+            const mailto = 'mailto:neousaxis@gmail.com'
+                + '?subject=' + encodeURIComponent(subject)
+                + '&body=' + encodeURIComponent(body);
+
+            const status = document.getElementById('form-status');
+            status.textContent = t.form_success || 'Your email app should now open — just press send to deliver your message.';
+            status.style.color = 'var(--primary-color)';
+
+            window.location.href = mailto;
         });
 
         // Effet de parallaxe léger pour le hero
